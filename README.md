@@ -1,8 +1,8 @@
 # CSE 151A Matchmaker
 
-Link to our Jupyter notebook: https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing
-Link to Dataset: https://www.kaggle.com/datasets/ulrikthygepedersen/speed-dating/data
-The csv to the out dataset is also on the repository. 
+Link to our Jupyter notebook: https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing\
+Link to Dataset: https://www.kaggle.com/datasets/ulrikthygepedersen/speed-dating/data\
+The csv to the out dataset is also on the repository. \
 
 ## Introduction to our Dataset
 Our dataset consists of questionnaire responses from a speed dating event in 2004. The questionnaire collected basic information about participants, their hobbies/interests, how attractive they found the other person, how they rate themselves on several factors etc. The last field is whether or not they ended up being a match. We wanted to use some of the data in here to generate a predictive model that, when given certain data about 2 different people, can predict whether or not they will be a match.
