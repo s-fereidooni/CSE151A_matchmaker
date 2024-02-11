@@ -1,7 +1,7 @@
 # CSE 151A Matchmaker
 
-Link to our Jupyter notebook: https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing\
-Link to Dataset: https://www.kaggle.com/datasets/ulrikthygepedersen/speed-dating/data\
+Link to our Jupyter notebook: https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing \
+Link to Dataset: https://www.kaggle.com/datasets/ulrikthygepedersen/speed-dating/data \
 The csv to the out dataset is also on the repository. \
 
 ## Introduction to our Dataset
