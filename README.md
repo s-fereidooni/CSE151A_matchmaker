@@ -42,8 +42,8 @@ In the future preprocessing stages, we plan to first normalize our ratings data 
 It was decided that the relevant data is the difference between preferences of two people. This means that we need to drop all irrelevant columns. After dropping, the values were string values representing a range of values, so these values need to be encoded to represent actual integer values. Then, the output values in the matching column also needs to be encoded, so we used one-hot-encoding to create two columns: match and no match.
 
 ---
-# Training the Model + Future Models
-For our first model, we used a simple neural network to predict matches based on differences in preferences.
+# Our Model + Future Models
+For our first model, we used a simple neural network to predict matches based on differences in preferences. We are considering using Random Forest Classifier and a Decision Tree as our next models. A Random Forest Classifier is less prone to overfitting and can give useful insights into the relevance/importance of the features in our data. On the other hand, a Decision Tree is a bit more likely to overfit if it is deep, but it is easily interpretable and does not make assumptions about the data distribution. 
 
 ---
 # Evaluating the Model
@@ -52,4 +52,3 @@ For our first model, we used a simple neural network to predict matches based on
 # Conclusion
 
 ---
-# Future Possible Models
