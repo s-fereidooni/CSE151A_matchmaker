@@ -36,3 +36,20 @@ It is too soon to make any concrete conclusions, but this informed us that our m
 Some preprocessing was already done at the time of submission, in that we had to drop a lot of columns for an interpretable exploratory data analysis. As the difference data and match class were both provided as objects, we converted them to numerical values. The scale for difference in importance of [trait] is much larger at 1 - 100 compared to the difference data for hobby ratings (1-10). We probably have to scale the data such that they are all normalized. Our target values are already binary, so only conversion to numerics is needed for our target class.
 
 In the future preprocessing stages, we plan to first normalize our ratings data into scales of 0-1 proportionate to the current rating scales. Furthermore, we can consider normalizing "object" type data (e.g. strings) into discrete numerical values to incorporate demographics data as well as other columns into our model for a more multi-faceted approach. We can consider a larger 80-20 split between our training and testing data as we have enough entries to facilitate a bigger testing split.
+
+---
+# Preprocessing
+It was decided that the relevant data is the difference between preferences of two people. This means that we need to drop all irrelevant columns. After dropping, the values were string values representing a range of values, so these values need to be encoded to represent actual integer values. Then, the output values in the matching column also needs to be encoded, so we used one-hot-encoding to create two columns: match and no match.
+
+---
+# Training the Model
+For our first model, we used a simple neural network to predict matches based on differences in preferences.
+
+---
+# Evaluating the Model
+
+---
+# Conclusion
+
+---
+# Future Possible Models
