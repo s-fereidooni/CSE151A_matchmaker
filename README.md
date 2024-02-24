@@ -47,7 +47,7 @@ For our first model, we used a simple neural network to predict matches based on
 
 ---
 # Evaluating the Model
-
+It seems that our model is underfitting since the training loss does not seem to decrease over time, and the validation loss is also somewhat high. 
 ---
 # Conclusion
 
