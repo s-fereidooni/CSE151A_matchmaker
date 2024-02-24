@@ -42,7 +42,7 @@ In the future preprocessing stages, we plan to first normalize our ratings data 
 It was decided that the relevant data is the difference between preferences of two people. This means that we need to drop all irrelevant columns. After dropping, the values were string values representing a range of values, so these values need to be encoded to represent actual integer values. Then, the output values in the matching column also needs to be encoded, so we used one-hot-encoding to create two columns: match and no match.
 
 ---
-# Training the Model
+# Training the Model + Future Models
 For our first model, we used a simple neural network to predict matches based on differences in preferences.
 
 ---
