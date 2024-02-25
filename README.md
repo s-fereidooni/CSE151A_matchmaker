@@ -39,11 +39,11 @@ In the future preprocessing stages, we plan to first normalize our ratings data 
 
 ---
 # Preprocessing
-It was decided that the relevant data is the difference between preferences of two people. This means that we need to drop all irrelevant columns. After dropping, the values were string values representing a range of values, so these values need to be encoded to represent actual integer values. Then, the output values in the matching column also needs to be encoded, so we used one-hot-encoding to create two columns: match and no match.
+It was decided that the relevant data is the difference between preferences of two people. This means that we need to drop all irrelevant columns. After dropping, the values were string values representing a range of values, so these values need to be encoded to represent actual integer values. Then, the output values in the matching column also needs to be encoded, so we first converted the string values to 0's and 1's, then used one-hot-encoding to create two columns: match and no match.
 
 ---
 # Our Model + Future Models
-For our first model, we used a neural network to predict matches based on differences in preferences.  We are considering using Random Forest Classifier and a Decision Tree as our next models. A Random Forest Classifier is less prone to overfitting and can give useful insights into the relevance/importance of the features in our data. On the other hand, a Decision Tree is a bit more likely to overfit if it is deep, but it is easily interpretable and does not make assumptions about the data distribution. 
+For our first model, we used a neural network to predict matches based on differences in preferences.  We are considering using Random Forest Classifier and a Decision Tree as our next models. A Random Forest Classifier is less prone to overfitting and can give useful insights into the relevance/importance of the features in our data. Random Forest Classifiers also excel with categorical data. While our dataset has numerical values, it is more along the lines of categorical data since the numerical values represent categories of differences rather than actual continuous values. On the other hand, a Decision Tree is a bit more likely to overfit if it is deep, but it is easily interpretable and does not make assumptions about the data distribution. Decision Trees can help with understanding how different data values affect the output, and are also less computaionally heavy, which should result in faster training and classifying times.
 
 ---
 # Evaluating the Model
