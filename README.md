@@ -1,8 +1,8 @@
 # CSE 151A Matchmaker
 
 Link to our Jupyter notebooks: 
-* MS2: https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing
-* MS3: https://colab.research.google.com/drive/1YiTdME0R0TYR0eGEjBOzBj24NQI2w02b?usp=sharing \
+* MS2: [https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing](https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing)
+* MS3: [https://colab.research.google.com/drive/1YiTdME0R0TYR0eGEjBOzBj24NQI2w02b?usp=sharing](https://colab.research.google.com/drive/1z7sOpXUmxRID6vVpQlkCrXNFihgwi_LU?usp=sharing) \
 Link to Dataset: https://www.kaggle.com/datasets/ulrikthygepedersen/speed-dating/data \
 The csv to the out dataset is also on the repository. 
 
@@ -43,11 +43,18 @@ It was decided that the relevant data is the difference between preferences of t
 
 ---
 # Our Model + Future Models
-For our first model, we used a simple neural network to predict matches based on differences in preferences. We are considering using Random Forest Classifier and a Decision Tree as our next models. A Random Forest Classifier is less prone to overfitting and can give useful insights into the relevance/importance of the features in our data. On the other hand, a Decision Tree is a bit more likely to overfit if it is deep, but it is easily interpretable and does not make assumptions about the data distribution. 
+For our first model, we used a neural network to predict matches based on differences in preferences.  We are considering using Random Forest Classifier and a Decision Tree as our next models. A Random Forest Classifier is less prone to overfitting and can give useful insights into the relevance/importance of the features in our data. On the other hand, a Decision Tree is a bit more likely to overfit if it is deep, but it is easily interpretable and does not make assumptions about the data distribution. 
 
 ---
 # Evaluating the Model
-It seems that our model is underfitting since the training loss does not seem to decrease over time, and the validation loss is also somewhat high. 
+It seems that our model is fitting well--perhaps even somewhat of a best-fit! The trained model boasts a train MSE of 0.13509749 and a test MSE of 0.1443914. When observing the MSE of the model as it trains, it decreases from 0.169 to 0.101 and the val_mse decreases concurrently from 0.160 to 0.106, and the two eventually converge. It is expected that the test and val have a slightly higher MSE as the train MSE. Additionally, the accuracy starts at 0.82 and increases to end at 0.87, as the validation accuracy also follows a similar increasing trend starting at 0.85 to 0.86. 
+
+![image](https://github.com/s-fereidooni/CSE151A_matchmaker/assets/107325918/4219dbe7-27bb-4cb3-aad2-a3eaff4aca26)
+
+On the fitting graph, our model falls near the line of best fit since the test MSE and train MSE both decrease over time and somewhat converge, but the test MSE is still higher than that of the train. 
+
+It is important to note that the model is still not perfect, and requires further exploration/exploration of different models. Currently, as seen in our classification report, our model is relatively good at predicting non-matches in both precision and recall, but does not do as well in predicting matches. Our future models, the Random Forest Classifier and the Decision Tree, will hopefully resolve this match-predicting issue. 
+
 ---
 # Conclusion
 
