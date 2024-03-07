@@ -77,7 +77,9 @@ Check MS4 jupyter notebook.
 When comparing the decision 
 
 **5. Did you perform hyper parameter tuning? K-fold Cross validation? Feature expansion? What were the results?**
+
 We performed hyper parameter tuning and K-fold Cross validation using Grid Search, but the model’s accuracy was not increasing even with the best found model. Our original accuracy was at around 0.85 and regardless of what was changed, even the best possible model we found was not able to exceed that. 
+
 **5. What is the plan for the next model you are thinking of and why?**
 The next model we are thinking of is an SVM. This is because it’s effective in even nonlinear classification and where there's a lot of dimensions of data without much data. In this case, we have various dimensions to our data, as there are a lot of criteria for choosing/simulating the choosing of finding a partner. 
 
