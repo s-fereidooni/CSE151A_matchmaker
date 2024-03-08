@@ -71,9 +71,18 @@ In milestone 2 we cleaned our data of 8378 observations with 123 features to 56 
 
 ### Evaluating the Model
 #### 3. Evaluate your model compare training vs test error
-Decision Tree:
-Training set score: 0.8433
-Test set score: 0.8455
+For this milestone we implemented a decision tree for our classification task. In order to find the best hyperparameters used grid search which yielded the following hyperparameters:
+ - criterion: entropy
+ - max_depth: 5
+ - min_samples_leaf: 2
+ - min_samples_split: 4
+
+Which resulted in the following training and test accuracies:
+ - Training set accuracy: 0.8433 
+ - Test set accuracy: 0.8455
+
+We can see that the training accuracy and test accuracy were very similar suggesting that the model was a good fit.
+
 
 #### 4. Where does your model fit in the fitting graph, how does it compare to your first model?
 When comparing the decision 
