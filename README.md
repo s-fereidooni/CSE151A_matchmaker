@@ -81,7 +81,8 @@ We can see that the training accuracy and test accuracy were very similar sugges
 #### 4. Where does your model fit in the fitting graph, how does it compare to your first model?
 As seen by the accuracies above, our model was a good fit for the data as our training and test accuracies were very similar. Furthermore upon inspection of the tree diagram, we saw that there were 31 leaf nodes and 5 layers which we believed to be a good amount in relation to the number of observations. We also saw that each leaf node had at a minimum 9 observations which is not low enough to suggest overfitting. Grid search assisted in ensuring that our model would be a good fit for our data as it searched for the best hyperparameters and did 5 fold cross validation. In the last milestone we were able to achieve 0.87 accuracy on the training set and 0.86 accuracy on the test set by training a neural network. Although the decision tree did worse than the neural network, we are happy to find that it came within 2-3% accuracy of the neural network.
 
-![image](https://github.com/s-fereidooni/CSE151A_matchmaker/assets/decision_tree_diagram.html)
+
+![image](https://github.com/s-fereidooni/CSE151A_matchmaker/blob/f2e0e3b8d87cdef0be55264afdfba2150eb8fb9e/decision_tree_diagram.png)
 
 ### Our Model + Future Models
 #### 5. Did you perform hyper parameter tuning? K-fold Cross validation? Feature expansion? What were the results?
