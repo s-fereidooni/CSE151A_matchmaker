@@ -66,27 +66,26 @@ It is important to note that the model is still not perfect, and requires furthe
 
 # Milestone 4
 ### Preprocessing
-### 1. Evaluate your data, labels and loss function. Were they sufficient or did you have have to change them.
+#### 1. Evaluate your data, labels and loss function. Were they sufficient or did you have have to change them.
 In milestone 2 we cleaned our data of 8378 observations with 123 features to 56 features. We found this to work great in milestone 3 as well as the current milestone so we kept it as is with 56 features. Furthermore we value encoded the data as the original data was composed of strings of numerical ranges. We ended up averaging the ranges which would be the encoding for that feature, for example ‘[3-5]’ would turn into 4. This made the values a lot easier to work with for our model.
 
 ### Evaluating the Model
-### 3. Evaluate your model compare training vs test error
+#### 3. Evaluate your model compare training vs test error
 Decision Tree:
 Training set score: 0.8433
 Test set score: 0.8455
 
-### 4. Where does your model fit in the fitting graph, how does it compare to your first model?
+#### 4. Where does your model fit in the fitting graph, how does it compare to your first model?
 When comparing the decision 
 
 ### Our Model + Future Models
-### 5. Did you perform hyper parameter tuning? K-fold Cross validation? Feature expansion? What were the results?
+#### 5. Did you perform hyper parameter tuning? K-fold Cross validation? Feature expansion? What were the results?
 We performed hyper parameter tuning and K-fold Cross validation using Grid Search, but the model’s accuracy was not increasing even with the best found model. Our original accuracy was at around 0.85 and regardless of what was changed, even the best possible model we found was not able to exceed that. 
 
-### 6. What is the plan for the next model you are thinking of and why?
+#### 6. What is the plan for the next model you are thinking of and why?
 The next model we are thinking of is an SVM. This is because it’s effective in even nonlinear classification and where there's a lot of dimensions of data without much data. In this case, we have various dimensions to our data, as there are a lot of criteria for choosing/simulating the choosing of finding a partner. 
 
-
-### 7. Conclusion section: What is the conclusion of your 2nd model? What can be done to possibly improve it? How did it perform to your first and why?
+#### 7. Conclusion section: What is the conclusion of your 2nd model? What can be done to possibly improve it? How did it perform to your first and why?
 The second model worked well enough, with around an 85% accuracy, which is similar to our previous model's accuracy as well. However, we don't think it's very possible to improve the decision tree classifier we used more than we already have. We used hyper parameter tuning to improve the model's accuracy, but it stayed around the same number. Pruning the tree in different ways could possibly improve the model's accuracy as well. We've tried to do Cost-complexity pruning, however, it made no effect on our model, but we could potentially try other pruning methods like weakest link pruning to better the model. 
 
 
