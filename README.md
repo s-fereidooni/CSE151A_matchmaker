@@ -79,7 +79,6 @@ When comparing the decision
 
 ### Our Model + Future Models
 ### 5. Did you perform hyper parameter tuning? K-fold Cross validation? Feature expansion? What were the results?
-
 We performed hyper parameter tuning and K-fold Cross validation using Grid Search, but the model’s accuracy was not increasing even with the best found model. Our original accuracy was at around 0.85 and regardless of what was changed, even the best possible model we found was not able to exceed that. 
 
 ### 6. What is the plan for the next model you are thinking of and why?
@@ -87,6 +86,6 @@ The next model we are thinking of is an SVM. This is because it’s effective in
 
 
 ### 7. Conclusion section: What is the conclusion of your 2nd model? What can be done to possibly improve it? How did it perform to your first and why?
-
+The second model worked well enough, with around an 85% accuracy, which is similar to our previous model's accuracy as well. However, we don't think it's very possible to improve the decision tree classifier we used more than we already have. We used hyper parameter tuning to improve the model's accuracy, but it stayed around the same number. Pruning the tree in different ways could possibly improve the model's accuracy as well. We've tried to do Cost-complexity pruning, however, it made no effect on our model, but we could potentially try other pruning methods like weakest link pruning to better the model. 
 
 
