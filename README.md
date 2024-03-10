@@ -42,7 +42,9 @@ It was decided that the relevant data is the difference between preferences of t
 ## Model 1
 
 Link to Model 1 Notebook:
+ [https://colab.research.google.com/drive/1YiTdME0R0TYR0eGEjBOzBj24NQI2w02b?usp=sharing](https://colab.research.google.com/drive/1YiTdME0R0TYR0eGEjBOzBj24NQI2w02b?usp=sharing)
 
+[draft notebook with hyperparameter tuning -- not the final submission, just trials]
 [https://colab.research.google.com/drive/1YiTdME0R0TYR0eGEjBOzBj24NQI2w02b?usp=sharing](https://colab.research.google.com/drive/1YiTdME0R0TYR0eGEjBOzBj24NQI2w02b?usp=sharing)
 
 Our first model is a simple neural net. After messing around with hyperparameter tuning, we settled on a neural net with 5 dense layers, with the first 4 having 12 nodes and the last layer having 2. We used the sigmoid activation function on each layer, and optimized the model with stochastic gradient descent with a learning rate of 0.1. The loss function used was categorical cross entropy.
