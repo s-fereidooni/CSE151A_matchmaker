@@ -1,4 +1,4 @@
-<img width="723" alt="image" src="https://github.com/s-fereidooni/CSE151A_matchmaker/assets/75962771/e1d9dd84-6b9b-4a0e-95a2-870a8b8a8482"># CSE 151A Matchmaker
+# CSE 151A Matchmaker
 
 Link to our Jupyter notebooks: 
 * MS2: [https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing](https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing)
@@ -53,7 +53,7 @@ For our first model, we used a neural network to predict matches based on differ
 ### Evaluating the Model
 It seems that our model is fitting well--perhaps even somewhat of a best-fit! The trained model boasts a train MSE of 0.13509749 and a test MSE of 0.1443914. When observing the MSE of the model as it trains, it decreases from 0.169 to 0.101 and the val_mse decreases concurrently from 0.160 to 0.106, and the two eventually converge. It is expected that the test and val have a slightly higher MSE as the train MSE. Additionally, the accuracy starts at 0.82 and increases to end at 0.87, as the validation accuracy also follows a similar increasing trend starting at 0.85 to 0.86. 
 
-![image](figures/decision_tree_diagram.png)
+
 
 On the fitting graph, our model falls near the line of best fit since the test MSE and train MSE both decrease over time and somewhat converge, but the test MSE is still higher than that of the train. 
 
