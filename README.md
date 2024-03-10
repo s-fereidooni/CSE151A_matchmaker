@@ -3,8 +3,8 @@
 Link to our Jupyter notebooks: 
 * MS2: [https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing](https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing)
 * MS3: [https://colab.research.google.com/drive/1YiTdME0R0TYR0eGEjBOzBj24NQI2w02b?usp=sharing](https://colab.research.google.com/drive/1z7sOpXUmxRID6vVpQlkCrXNFihgwi_LU?usp=sharing) 
-* MS4: [https://colab.research.google.com/drive/1Wfwq86W_myw6D7NHexcekC2eitLdB0yb?usp=sharing](https://colab.research.google.com/drive/1Wfwq86W_myw6D7NHexcekC2eitLdB0yb?usp=sharing) 
-
+* MS4: [https://colab.research.google.com/drive/1mJI34SCPfBrJ7Xdx65e0Myvi7k0Eox3U?usp=sharing](https://colab.research.google.com/drive/1mJI34SCPfBrJ7Xdx65e0Myvi7k0Eox3U?usp=sharing)
+* 
 Link to Dataset: https://www.kaggle.com/datasets/ulrikthygepedersen/speed-dating/data \
 The csv to the out dataset is also on the repository. 
 
@@ -60,7 +60,8 @@ On the fitting graph, our model falls near the line of best fit since the test M
 It is important to note that the model is still not perfect, and requires further exploration/exploration of different models. Currently, as seen in our classification report, our model is relatively good at predicting non-matches in both precision and recall, but does not do as well in predicting matches. Our future models, the Random Forest Classifier and the Decision Tree, will hopefully resolve this match-predicting issue. 
 
 ---
-### Conclusion
+### Conclusion section: What is the conclusion of your 1st model? What can be done to possibly improve it? How did it perform to your first and why? 
+Given the time constraints, we are relatively satisfied with the accuracy and loss achieved with model 1. The model is pretty good at predicting when a pair are not a match, but still struggles to correctly predict when a pair is a match. This makes sense, given that in the dataset (and in real life), we are much likely more likely to meet non-matches than matches, leading to a skewed dataset. Perhaps one way to counteract that in the future could be through resampling. 
 
 ---
 
@@ -75,7 +76,9 @@ For this milestone we implemented a decision tree for our classification task. W
  - Training set accuracy: 0.8433 
  - Test set accuracy: 0.8455
 
-We can see that the training accuracy and test accuracy were very similar suggesting that the model was a good fit.
+After plotting the learning curve, you can see the train score and test score converge, which suggests that the model is a good fit and not overfitting.
+
+![image](figures/DT_LC.png)
 
 
 #### 4. Where does your model fit in the fitting graph, how does it compare to your first model?
