@@ -2,7 +2,7 @@
 
 Link to our Jupyter notebooks (also linked throughout write up): 
 * MS2: [https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing](https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing)
-* MS3: [https://colab.research.google.com/drive/1YiTdME0R0TYR0eGEjBOzBj24NQI2w02b?usp=sharing](https://colab.research.google.com/drive/1z7sOpXUmxRID6vVpQlkCrXNFihgwi_LU?usp=sharing) 
+* MS3: [https://colab.research.google.com/drive/1z7sOpXUmxRID6vVpQlkCrXNFihgwi_LU?usp=sharing](https://colab.research.google.com/drive/1z7sOpXUmxRID6vVpQlkCrXNFihgwi_LU?usp=sharing) 
 * MS4: [https://colab.research.google.com/drive/1mJI34SCPfBrJ7Xdx65e0Myvi7k0Eox3U?usp=sharing](https://colab.research.google.com/drive/1mJI34SCPfBrJ7Xdx65e0Myvi7k0Eox3U?usp=sharing)
 * MS5: [https://colab.research.google.com/drive/1-D_WYKVvO-rNaSWxxmgSMwctafu7_UzA?usp=sharing](https://colab.research.google.com/drive/1-D_WYKVvO-rNaSWxxmgSMwctafu7_UzA?usp=sharing)
 
@@ -42,7 +42,7 @@ It was decided that the relevant data is the difference between preferences of t
 ## Model 1
 
 Link to Model 1 Notebook:
- [https://colab.research.google.com/drive/1YiTdME0R0TYR0eGEjBOzBj24NQI2w02b?usp=sharing](https://colab.research.google.com/drive/1YiTdME0R0TYR0eGEjBOzBj24NQI2w02b?usp=sharing)
+ [https://colab.research.google.com/drive/1z7sOpXUmxRID6vVpQlkCrXNFihgwi_LU?usp=sharing](https://colab.research.google.com/drive/1z7sOpXUmxRID6vVpQlkCrXNFihgwi_LU?usp=sharing)
 
 [draft notebook with hyperparameter tuning -- not the final submission, just trials]
 [https://colab.research.google.com/drive/1YiTdME0R0TYR0eGEjBOzBj24NQI2w02b?usp=sharing](https://colab.research.google.com/drive/1YiTdME0R0TYR0eGEjBOzBj24NQI2w02b?usp=sharing)
