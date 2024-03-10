@@ -53,14 +53,14 @@ For our first model, we used a neural network to predict matches based on differ
 ### Evaluating the Model
 It seems that our model is fitting well--perhaps even somewhat of a best-fit! The trained model boasts a train MSE of 0.13509749 and a test MSE of 0.1443914. When observing the MSE of the model as it trains, it decreases from 0.169 to 0.101 and the val_mse decreases concurrently from 0.160 to 0.106, and the two eventually converge. It is expected that the test and val have a slightly higher MSE as the train MSE. Additionally, the accuracy starts at 0.82 and increases to end at 0.87, as the validation accuracy also follows a similar increasing trend starting at 0.85 to 0.86. 
 
-
+![image](https://github.com/s-fereidooni/CSE151A_matchmaker/assets/107325918/4219dbe7-27bb-4cb3-aad2-a3eaff4aca26)
 
 On the fitting graph, our model falls near the line of best fit since the test MSE and train MSE both decrease over time and somewhat converge, but the test MSE is still higher than that of the train. 
 
 It is important to note that the model is still not perfect, and requires further exploration/exploration of different models. Currently, as seen in our classification report, our model is relatively good at predicting non-matches in both precision and recall, but does not do as well in predicting matches. Our future models, the Random Forest Classifier and the Decision Tree, will hopefully resolve this match-predicting issue. 
 
 ---
-#### Conclusion section: What is the conclusion of your 1st model? What can be done to possibly improve it? How did it perform to your first and why? 
+### Conclusion section: What is the conclusion of your 1st model? What can be done to possibly improve it? How did it perform to your first and why? 
 Given the time constraints, we are relatively satisfied with the accuracy and loss achieved with model 1. The model is pretty good at predicting when a pair are not a match, but still struggles to correctly predict when a pair is a match. This makes sense, given that in the dataset (and in real life), we are much likely more likely to meet non-matches than matches, leading to a skewed dataset. Perhaps one way to counteract that in the future could be through resampling. 
 
 ---
