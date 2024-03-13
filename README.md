@@ -226,3 +226,5 @@ Kenna: Worked on the code for the data exploration notebook and wrote the prepro
 Alon: Worked on the code and documentation for milestone 4 as well as the questions for milestone 4. 
 
 Shruti: Worked on the code/documentation for the milestone 4 notebook and wrote the answers/writeup for the questions for milestone 4 into the readme. 
+
+Kaleigh: Worked on code and documentation for milestone 3 notebook and wrote answers for questions in the readme as well as documentation in the notebook itself. Collaborated in assessing which model to choose for the task. 
