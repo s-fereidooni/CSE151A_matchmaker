@@ -224,3 +224,5 @@ It is also important to note that the data used is from two decades ago, and the
 Kenna: Worked on the code for the data exploration notebook and wrote the preprocessing readme file. Debugged the last model and wrote the evaluation for it. Wrote the final write up (restructured readme from previous submissions, wrote the discussion and evaluation for model 3, wrote the conclusion). 
 
 Alon: Worked on the code and documentation for milestone 4 as well as the questions for milestone 4. 
+
+Shruti: Worked on the code/documentation for the milestone 4 notebook and wrote the answers/writeup for the questions for milestone 4 into the readme. 
