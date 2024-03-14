@@ -232,3 +232,5 @@ Sonia: Worked on code and documentation for milestone 3 notebook and answered th
 Kaleigh: Worked on code and documentation for milestone 3 notebook and wrote answers for questions in the readme as well as documentation in the notebook itself. Collaborated in assessing which model to choose for the task. 
 
 Joshua: Worked on datapreprocessing, code for exploration notebook, and developing the first model. Contributed towards the readme file of the first milestone as well.
+
+Oscar: worked on code and documentation for milestone 5 notebook, developing 3rd model, and worked on initial README in milestone 1. 
