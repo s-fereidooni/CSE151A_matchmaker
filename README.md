@@ -230,3 +230,5 @@ Shruti: Worked on the code/documentation for the milestone 4 notebook and wrote 
 Sonia: Worked on code and documentation for milestone 3 notebook and answered the readme questions for milestone 3. Additionally, I created the website that uses a modified version of our milestone 3 model to predict matches :-)
 
 Kaleigh: Worked on code and documentation for milestone 3 notebook and wrote answers for questions in the readme as well as documentation in the notebook itself. Collaborated in assessing which model to choose for the task. 
+
+Joshua: Worked on datapreprocessing, code for exploration notebook, and developing the first model. Contributed towards the readme file of the first milestone as well.
