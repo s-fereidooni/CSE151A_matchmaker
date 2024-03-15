@@ -207,6 +207,9 @@ After using Random Search for hyperparameter tuning, we landed on a train accura
 
 # Discussion 
 
+## Data Exploration
+
+The data explorattion served as a vital part of our machine learning pipeline as it forms the very foundation on which we built our initial intuitions on which models to pursue. Through exploring the data, we were able to identify that the data we had was perhaps not in the best format for identifying existing trends, and that it would be better to process the data to identify the most applicable traits when determining a match. This intuition would later feed into the idea of using decision tree learning and to implement pruning to leave us with only the most relevant features and splits when determining match status. In our data exploration, after mapping heatmaps between sheer traits as opposed to differences between traits, we were also able to identify that the most correlated features were those that represented differences between a pair, which helped us in forming our initial intuitions in pursuing a neural network as our first model, and passing in solely the differences between traits as the feature values on which our model was trained. 
 
 ## Preprocessing 
 
@@ -303,7 +306,7 @@ Alon: Worked on the code and documentation for milestone 4 as well as the questi
 
 Shruti: Worked on the code/documentation for the milestone 4 notebook and wrote the answers/writeup for the questions for milestone 4 into the readme. 
 
-Sonia: Worked on code and documentation for milestone 3 notebook and answered the readme questions for milestone 3. Additionally, I created the website that uses a modified version of our milestone 3 model to predict matches. Also created a video demo of the website and added it to the repo along with instructions to run. Also contributed to writing responses in the final write up. :-)
+Sonia: Worked on code and documentation for milestone 3 notebook and answered the readme questions for milestone 3. Additionally, I created the website that uses a modified version of our milestone 3 model to predict matches. Also created a video demo of the website and added it to the repo along with instructions to run. Also contributed to writing responses in the final write up and gave feedback on the writeup. :-)
 
 Kaleigh: Worked on code and documentation for milestone 3 notebook and wrote answers for questions in the readme as well as documentation in the notebook itself. Collaborated in assessing which model to choose for the task. 
 
