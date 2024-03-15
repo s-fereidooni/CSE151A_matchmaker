@@ -235,11 +235,11 @@ Joshua: Worked on datapreprocessing, code for exploration notebook, and developi
 
 Oscar: worked on code and documentation for milestone 5 notebook, developing 3rd model, and worked on initial README in milestone 1. 
 
-#THE FUN PART: Our matchmaking website!
+# THE FUN PART: Our matchmaking website!
 
 <img width="1465" alt="image" src="https://github.com/s-fereidooni/CSE151A_matchmaker/assets/107325918/2bee6594-29a4-46eb-93bd-a8f0798480e0">
 
-##Steps to Run:
+## Steps to Run:
 1. clone our repository using the command:
    ```
    git clone https://github.com/s-fereidooni/CSE151A_matchmaker
