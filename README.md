@@ -64,10 +64,48 @@ Link to Data Exploration Notebook:
 
 To explore the data, we first converted our csv file to a dataframe, and skimmed through all the data that is available. We checked for missing data, the different types of each feature, the shape of the data frame etc. 
 
+Some relevant code snippets in exploring the data are listed below~
+
+checking the total null values in each feature column:
+```
+df.isnull().sum()
+```
+
+checking feature types:
+```
+df.dtypes
+```
+
+observing trends between features:
+```
+self_perception = pd.DataFrame([df.attractive, df.sincere, df.intelligence, df.funny, df.ambition, df.match]).transpose()
+sns.pairplot(self_perception)
+```
 
 ## Preprocessing
 
-It was decided that the relevant data is the difference between preferences of two people. This means that we need to drop all irrelevant columns. After dropping, the values were string values representing a range of values, so these values need to be encoded to represent actual integer values. Then, the output values in the matching column also needed to be encoded, so we first converted the string values to 0's and 1's, then used one-hot-encoding to create two columns: match and no match.
+It was decided that the relevant data is the difference between preferences of two people. This means that we need to drop all irrelevant columns. After dropping, the range values were represented as string values, so these values need to be encoded to represent actual integer values by taking the average value of each range and replacing and reassigning the outputted integer value to the corresponding range. 
+
+Below is a code snippet showcasing the dropping of non-difference columns:
+```
+dropCols = [col for col in df.columns if not col.startswith('d_')]
+newDf = df.drop(columns = dropCols)
+```
+
+And to replace the string range values with range-mean int values, we wrote the following code:
+```
+for col in newDf:
+  uniqueVals = newDf[col].unique()
+  for uniqueVal in uniqueVals:
+    if (isinstance(uniqueVal, str)):
+      myStrs = re.findall('\d+', uniqueVal)
+      myInts = np.array([int(myStr) for myStr in myStrs])
+      avg = myInts.mean()
+      newDf = newDf.replace(uniqueVal, avg)
+```
+
+Then, the output values in the matching column also needed to be encoded, so we first converted the string values to 0's and 1's, then used one-hot-encoding to create two columns: match and no match.
+
 
 
 ## Model 1
@@ -119,6 +157,10 @@ We can then further split the "difference" data into 2 subsections: difference i
 
 It is too soon to make any concrete conclusions, but this informs us that our model will need to be more complex than a simple logistic regression model, which has drawbacks when dealing with complex patterns and non-linear relationships in data. At this stage, we are still considering random forest classifier models and multi-layer perceptron neural networks, with the latter as our more likely choice due to the sheer volume of the data we have in this data set.
 
+## Preprocessing
+
+![Before Range Preprocessing](https://drive.google.com/uc?export=view&id=1RabpgOqtIjj1S4LP8dH2jSwBbq2Bk54f)
+![After Range Preprocessing](https://drive.google.com/file/d/1E3R6Axi07B8M3CO2ezR_dlYZnPmj2Fz2/view?usp=sharing)
 
 ## Model 1
 
@@ -258,7 +300,7 @@ Alon: Worked on the code and documentation for milestone 4 as well as the questi
 
 Shruti: Worked on the code/documentation for the milestone 4 notebook and wrote the answers/writeup for the questions for milestone 4 into the readme. 
 
-Sonia: Worked on code and documentation for milestone 3 notebook and answered the readme questions for milestone 3. Additionally, I created the website that uses a modified version of our milestone 3 model to predict matches. Also created a video demo of the website and added it to the repo along with instructions to run. :-)
+Sonia: Worked on code and documentation for milestone 3 notebook and answered the readme questions for milestone 3. Additionally, I created the website that uses a modified version of our milestone 3 model to predict matches. Also created a video demo of the website and added it to the repo along with instructions to run. Also contributed to responses in the final write up. :-)
 
 Kaleigh: Worked on code and documentation for milestone 3 notebook and wrote answers for questions in the readme as well as documentation in the notebook itself. Collaborated in assessing which model to choose for the task. 
 
