@@ -159,7 +159,10 @@ It is too soon to make any concrete conclusions, but this informs us that our mo
 
 ## Preprocessing
 
+After dropping the non-difference features, but prior to running the range preprocessing steps, the data for the differences resembled the following: 
 ![Before Range Preprocessing](figures/preprocess_before.png)
+
+After applying the processing to the string ranges and using the means of the ranges, we were met with the following output:
 ![After Range Preprocessing](figures/preprocess_after.png)
 
 ## Model 1
@@ -300,7 +303,7 @@ Alon: Worked on the code and documentation for milestone 4 as well as the questi
 
 Shruti: Worked on the code/documentation for the milestone 4 notebook and wrote the answers/writeup for the questions for milestone 4 into the readme. 
 
-Sonia: Worked on code and documentation for milestone 3 notebook and answered the readme questions for milestone 3. Additionally, I created the website that uses a modified version of our milestone 3 model to predict matches. Also created a video demo of the website and added it to the repo along with instructions to run. Also contributed to responses in the final write up. :-)
+Sonia: Worked on code and documentation for milestone 3 notebook and answered the readme questions for milestone 3. Additionally, I created the website that uses a modified version of our milestone 3 model to predict matches. Also created a video demo of the website and added it to the repo along with instructions to run. Also contributed to writing responses in the final write up. :-)
 
 Kaleigh: Worked on code and documentation for milestone 3 notebook and wrote answers for questions in the readme as well as documentation in the notebook itself. Collaborated in assessing which model to choose for the task. 
 
