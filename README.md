@@ -13,7 +13,7 @@ The csv to the out dataset is also on the repository.
 # First, the FUN PART: Our matchmaking website!
 
 ### Video Demo:
-<iframe src="https://drive.google.com/file/d/1vFJCX7kvob9dvvD-eoOev7rDUhsd_5JT/preview" width="640" height="480" allow="autoplay"></iframe>
+[![Video Thumbnail](https://drive.google.com/file/d/1bVzYLecfAcdSQf-3ERzDlNg3SDFOd7u-/view?usp=sharing)](https://drive.google.com/file/d/1vFJCX7kvob9dvvD-eoOev7rDUhsd_5JT/view?usp=sharing)
 
 ## Steps to Run:
 1. clone our repository using the command:
