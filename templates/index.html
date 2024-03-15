@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Super Accurate and Scientifically Proven Matchmaker</title>
+    <style>
+        body {background-color: rgb(255, 182, 212);}
+        h1   {color: rgb(255, 245, 251); margin: 20px;}
+        p    {color: rgb(183, 15, 68); margin: 10px;}
+        div {margin: 10px;}
+        button {background: rgb(240, 81, 155); margin: 10px; border-radius: 10px; padding: 5px;}
+        .p1   {color: rgb(121, 73, 208); margin: 10px;}
+        .p2   {color: rgb(222, 152, 0); margin: 10px;}
+        .person1 {background-color:rgb(204, 173, 232); margin: 10px; padding: 10px; border-radius: 10px;}
+        .person2 {background-color:rgb(255, 232, 178); margin: 10px; padding: 10px; border-radius: 10px;}
+        #prediction-result {color:rgb(183, 15, 68) ;font-size: 100pt; flex-direction: column;}
+        .questions {padding: 10px;}
+        .predictions {padding: 10px;}
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+    </style>   
+</head>
+<body>
+    <h1>Super Accurate and Scientifically Proven Matchmaker</h1>
+    <div class="container">
+        <div class="questions">
+            <form id="traits-form">
+                <div class="person1">
+                    <h3 class="p1">Partner 1: fill this out!</h3>
+                    <p>Rank the following 5 questions on a scale of 1 to 100</p>
+                    <div>
+                        <label for="p1q1">How important do you find attractiveness in a partner?</label>
+                        <input type="number" id="p1q1" name="trait1" required min = 0 max = 100>
+                    </div>
+                    <div>
+                        <label for="p1q2">How important do you find sincerity in a partner?</label>
+                        <input type="number" id="p1q2" name="trait2" required min = 0 max = 100>
+                    </div>
+                    <div>
+                        <label for="p1q3">How important do you find intelligence in a partner?</label>
+                        <input type="number" id="p1q3" name="trait3" required min = 0 max = 100>
+                    </div>
+                    <div>
+                        <label for="p1q4">How important do you find funniness in a partner?</label>
+                        <input type="number" id="p1q4" name="trait4" required min = 0 max = 100>
+                    </div>
+                    <div>
+                        <label for="p1q5">How important do you find ambition in a partner?</label>
+                        <input type="number" id="p1q5" name="trait5" required min = 0 max = 100>
+                    </div>
+                    <p>Rank the following 5 questions on a scale of 1 to 10</p>
+                    <div>
+                        <label for="p1q6">How attractive would you say you are?</label>
+                        <input type="number" id="p1q6" name="trait6" required min = 0 max = 10>
+                    </div>
+                    <div>
+                        <label for="p1q7">How sincere would you say you are?</label>
+                        <input type="number" id="p1q7" name="trait7" required min = 0 max = 10>
+                    </div>
+                    <div>
+                        <label for="p1q8">How intelligent would you say you are?</label>
+                        <input type="number" id="p1q8" name="trait8" required min = 0 max = 10>
+                    </div>
+                    <div>
+                        <label for="p1q9">How funny would you say you are?</label>
+                        <input type="number" id="p1q9" name="trait9" required min = 0 max = 10>
+                    </div>
+                    <div>
+                        <label for="p1q10">How ambitious would you say you are?</label>
+                        <input type="number" id="p1q10" name="trait10" required min = 0 max = 10>
+                    </div>
+                </div>
+
+                <div class="person2">
+                    <h3 class="p2">Partner 2: fill this out!</h3>
+                    <p>Rank the following 5 questions on a scale of 1 to 100</p>
+                    <div>
+                        <label for="p2q1">How important do you find attractiveness in a partner?</label>
+                        <input type="number" id="p2q1" name="trait1" required min = 0 max = 100>
+                    </div>
+                    <div>
+                        <label for="p2q2">How important do you find sincerity in a partner?</label>
+                        <input type="number" id="p2q2" name="trait2" required min = 0 max = 100>
+                    </div>
+                    <div>
+                        <label for="p2q3">How important do you find intelligence in a partner?</label>
+                        <input type="number" id="p2q3" name="trait3" required min = 0 max = 100>
+                    </div>
+                    <div>
+                        <label for="p2q4">How important do you find funniness in a partner?</label>
+                        <input type="number" id="p2q4" name="trait4" required min = 0 max = 100>
+                    </div>
+                    <div>
+                        <label for="p2q5">How important do you find ambition in a partner?</label>
+                        <input type="number" id="p2q5" name="trait5" required min = 0 max = 100>
+                    </div>
+                    <p>Rank the following 5 questions on a scale of 1 to 10</p>
+                    <div>
+                        <label for="p2q6">How attractive would you say you are?</label>
+                        <input type="number" id="p2q6" name="trait6" required min = 0 max = 10>
+                    </div>
+                    <div>
+                        <label for="p2q7">How sincere would you say you are?</label>
+                        <input type="number" id="p2q7" name="trait7" required min = 0 max = 10>
+                    </div>
+                    <div>
+                        <label for="p2q8">How intelligent would you say you are?</label>
+                        <input type="number" id="p2q8" name="trait8" required min = 0 max = 10>
+                    </div>
+                    <div>
+                        <label for="p2q9">How funny would you say you are?</label>
+                        <input type="number" id="p2q9" name="trait9" required min = 0 max = 10>
+                    </div>
+                    <div>
+                        <label for="p2q10">How ambitious would you say you are?</label>
+                        <input type="number" id="p2q10" name="trait10" required min = 0 max = 10>
+                    </div>
+                </div>
+                <button type="submit">Predict Match</button>
+            </form>
+        </div>
+        <div class="prediction">
+            <h3>What % Match Are You Two?</h3>
+            <div id="prediction-result"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('traits-form').onsubmit = async function(e) {
+            e.preventDefault();
+      
+            const numQuestions = 10;
+            let differences = [];
+            
+            for (let i = 1; i <= numQuestions; i++) {
+                let p1_response = document.getElementById('p1q' + i).value;
+                let p2_response = document.getElementById('p2q' + i).value;
+                
+                let difference = Math.abs(p1_response - p2_response);
+
+                let range1 = [2.5, 7, 7.5, 9.5, 18, 60.5];
+                let range1_vals = [7.5, 60.5, 18]
+
+                let range2 = [2.5, 7, 7.5, 9.5, 18, 60.5];
+                let range2_vals = [7, 2.5, 9.5]
+
+                if (i < 6)
+                    if (difference >= 0 && difference <= 15)
+                        differences.push(7.5);
+                    else if (difference >= 16 && difference <= 20)
+                        differences.push(18);
+                    else if (difference >= 21 && difference <= 100)
+                        differences.push(60.5);
+                if (i >= 6)
+                    if (difference >= 0 && difference <= 5)
+                        differences.push(2.5);
+                    else if (difference >= 6 && difference <= 8)
+                        differences.push(7);
+                    else if (difference >= 9 && difference <= 10)
+                        differences.push(9.5);
+            }
+            console.log(differences);
+      
+    const response = await fetch('/predict', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ differences: differences }),
+    });
+
+    const result = await response.json();
+
+    if ('prediction' in result) {
+        document.getElementById('prediction-result').innerText = result.prediction.substring(14,16) + '%';
+    } else if ('error' in result) {
+        document.getElementById('prediction-result').innerText = 'Error: ' + result.error;
+    } else {
+        document.getElementById('prediction-result').innerText = 'Unexpected response format';
+    }
+
+    };
+    </script>
+</body>
+</html>
