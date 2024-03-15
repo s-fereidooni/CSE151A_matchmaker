@@ -10,6 +10,33 @@ Link to Dataset: https://www.kaggle.com/datasets/ulrikthygepedersen/speed-dating
 The csv to the out dataset is also on the repository. 
 
 
+# First, the FUN PART: Our matchmaking website!
+
+<iframe width="560" height="315" src="https://drive.google.com/file/d/1vFJCX7kvob9dvvD-eoOev7rDUhsd_5JT/view?usp=sharing" title="Matchmaker Website Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Steps to Run:
+1. clone our repository using the command:
+   ```
+   git clone https://github.com/s-fereidooni/CSE151A_matchmaker
+   ```
+2. run the following commands to set up a virtual environment
+   ```
+   python3 -m venv venv
+   ```
+   followed by
+   ```
+   source venv/bin/activate
+   ```
+3. then, install the necessary dependencies in your venv by running the following command
+   ```
+   pip install -r requirements.txt
+   ```
+4. finally, run the website by running this command
+   ```
+   python main.py
+   ```
+5. find a partner, enter your ratings as instructed on the website, and see if you match!
+
 
 # Introduction
 
@@ -234,14 +261,3 @@ Kaleigh: Worked on code and documentation for milestone 3 notebook and wrote ans
 Joshua: Worked on datapreprocessing, code for exploration notebook, and developing the first model. Contributed towards the readme file of the first milestone as well.
 
 Oscar: worked on code and documentation for milestone 5 notebook, developing 3rd model, and worked on initial README in milestone 1. 
-
-# THE FUN PART: Our matchmaking website!
-
-<img width="1465" alt="image" src="https://github.com/s-fereidooni/CSE151A_matchmaker/assets/107325918/2bee6594-29a4-46eb-93bd-a8f0798480e0">
-
-## Steps to Run:
-1. clone our repository using the command:
-   ```
-   git clone https://github.com/s-fereidooni/CSE151A_matchmaker
-   ```
-2. 
