@@ -12,7 +12,8 @@ The csv to the out dataset is also on the repository.
 
 # First, the FUN PART: Our matchmaking website!
 
-<iframe width="560" height="315" src="https://drive.google.com/file/d/1vFJCX7kvob9dvvD-eoOev7rDUhsd_5JT/view?usp=sharing" title="Matchmaker Website Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Video Demo:
+<iframe src="https://drive.google.com/file/d/1vFJCX7kvob9dvvD-eoOev7rDUhsd_5JT/preview" width="640" height="480" allow="autoplay"></iframe>
 
 ## Steps to Run:
 1. clone our repository using the command:
