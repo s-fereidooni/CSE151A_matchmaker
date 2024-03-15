@@ -159,8 +159,8 @@ It is too soon to make any concrete conclusions, but this informs us that our mo
 
 ## Preprocessing
 
-![Before Range Preprocessing](https://drive.google.com/uc?export=view&id=1RabpgOqtIjj1S4LP8dH2jSwBbq2Bk54f)
-![After Range Preprocessing](https://drive.google.com/file/d/1E3R6Axi07B8M3CO2ezR_dlYZnPmj2Fz2/view?usp=sharing)
+![Before Range Preprocessing](figures/preprocessing_before.png)
+![After Range Preprocessing](figures/preprocessing_after.png)
 
 ## Model 1
 
