@@ -12,12 +12,12 @@ The csv to the out dataset is also on the repository.
 
 # First, the FUN PART: Our matchmaking website!
 
-### Video Demo:
+## Video Demo:
 click the thumbnail to watch our website demo :-)
 [![Video Thumbnail](https://github.com/s-fereidooni/CSE151A_matchmaker/blob/main/matchmaker_thumbnail.png)](https://drive.google.com/file/d/1vFJCX7kvob9dvvD-eoOev7rDUhsd_5JT/view?usp=sharing)
 follow the steps below to run the website and see who you match with on your own computer!
 
-## Steps to Run:
+## Steps to Run Website:
 1. clone our repository using the command:
    ```
    git clone https://github.com/s-fereidooni/CSE151A_matchmaker
