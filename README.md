@@ -337,16 +337,16 @@ It is also important to note that the data used is from two decades ago, and the
 
 # Collaboration 
 
-**Kenna**: Worked on the code for the data exploration notebook and wrote the preprocessing readme file. Debugged the last model and wrote the evaluation for it. Wrote the final write up (restructured readme from previous submissions, wrote the discussion and evaluation for model 3, wrote the conclusion). 
+**Kenna**: team lead: Worked on the code for the data exploration notebook and wrote the preprocessing readme file. Debugged the last model and wrote the evaluation for it. Wrote the final write up (restructured readme from previous submissions, wrote the discussion and evaluation for model 3, wrote the conclusion). 
 
-**Sonia**: Worked on code and documentation for milestone 3 notebook and answered the readme questions for milestone 3. Additionally, I created the website that uses a modified version of our milestone 3 model to predict matches. Also created a video demo of the website and added it to the repo along with instructions to run. Also contributed to writing responses in the final write up and gave feedback on the writeup. :-)
+**Sonia**: team lead: Worked on code and documentation for milestone 3 notebook and answered the readme questions for milestone 3. Additionally, I created the website that uses a modified version of our milestone 3 model to predict matches. Also created a video demo of the website and added it to the repo along with instructions to run. Also contributed to writing responses in the final write up and gave feedback on the writeup. :-)
 
-**Alon**: Worked on the code and documentation for milestone 4 as well as the questions for milestone 4. 
+**Alon**: coder/writer: Worked on the code and documentation for milestone 4 as well as the questions for milestone 4. 
 
-**Shruti**: Worked on the code/documentation for the milestone 4 notebook and wrote the answers/writeup for the questions for milestone 4 into the readme. 
+**Shruti**: coder/writer: Worked on the code/documentation for the milestone 4 notebook and wrote the answers/writeup for the questions for milestone 4 into the readme. 
 
-**Kaleigh**: Worked on code and documentation for milestone 3 notebook and wrote answers for questions in the readme as well as documentation in the notebook itself. Collaborated in assessing which model to choose for the task. 
+**Kaleigh**: writer: Worked on code and documentation for milestone 3 notebook and wrote answers for questions in the readme as well as documentation in the notebook itself. Collaborated in assessing which model to choose for the task. 
 
-**Joshua**: Worked on datapreprocessing, code for exploration notebook, and developing the first model. Contributed towards the readme file of the first milestone as well.
+**Joshua**: coder/writer: Worked on datapreprocessing, code for exploration notebook, and developing the first model. Contributed towards the readme file of the first milestone as well.
 
-**Oscar**: worked on code and documentation for milestone 5 notebook, developing 3rd model, and worked on initial README in milestone 1. 
+**Oscar**: coder: worked on code and documentation for milestone 5 notebook, developing 3rd model, and worked on initial README in milestone 1. 
