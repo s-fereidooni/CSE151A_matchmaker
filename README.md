@@ -34,7 +34,7 @@ follow the steps below to run the website and see who you match with on your own
 
 **Link to our Jupyter notebooks (also linked throughout write up):** 
 * MS2: [https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing](https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing)
-* MS3: [https://colab.research.google.com/drive/1z7sOpXUmxRID6vVpQlkCrXNFihgwi_LU?usp=sharing](https://colab.research.google.com/drive/1z7sOpXUmxRID6vVpQlkCrXNFihgwi_LU?usp=sharing) 
+* MS3: [https://colab.research.google.com/drive/1z7sOpXUmxRID6vVpQlkCrXNFihgwi_LU?usp=sharing](https://colab.research.google.com/drive/1z7sOpXUmxRID6vVpQlkCrXNFihgwi_LU?usp=sharing)
 * MS4: [https://colab.research.google.com/drive/1mJI34SCPfBrJ7Xdx65e0Myvi7k0Eox3U?usp=sharing](https://colab.research.google.com/drive/1mJI34SCPfBrJ7Xdx65e0Myvi7k0Eox3U?usp=sharing)
 * MS5: [https://colab.research.google.com/drive/1-D_WYKVvO-rNaSWxxmgSMwctafu7_UzA?usp=sharing](https://colab.research.google.com/drive/1-D_WYKVvO-rNaSWxxmgSMwctafu7_UzA?usp=sharing)
 
