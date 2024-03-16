@@ -20,15 +20,17 @@ follow the steps below to run the website and see who you match with on your own
    ```
    source venv/bin/activate
    ```
-3. then, install the necessary dependencies in your venv by running the following command
+3. then, cd into the pulled directory and install the necessary dependencies in your venv by running the following command
    ```
+   cd CSE151A_matchmaker
+ 
    pip install -r requirements.txt
    ```
-4. finally, run the website by running this command
+5. finally, run the website by running this command
    ```
    python main.py
    ```
-5. find a partner, enter your ratings as instructed on the website, and see if you match!
+6. find a partner, enter your ratings as instructed on the website, and see if you match!
 
 # Second, our final write-up! 
 
