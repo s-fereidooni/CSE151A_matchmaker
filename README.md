@@ -1,15 +1,5 @@
 # CSE 151A Matchmaker
 
-Link to our Jupyter notebooks (also linked throughout write up): 
-* MS2: [https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing](https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing)
-* MS3: [https://colab.research.google.com/drive/1z7sOpXUmxRID6vVpQlkCrXNFihgwi_LU?usp=sharing](https://colab.research.google.com/drive/1z7sOpXUmxRID6vVpQlkCrXNFihgwi_LU?usp=sharing) 
-* MS4: [https://colab.research.google.com/drive/1mJI34SCPfBrJ7Xdx65e0Myvi7k0Eox3U?usp=sharing](https://colab.research.google.com/drive/1mJI34SCPfBrJ7Xdx65e0Myvi7k0Eox3U?usp=sharing)
-* MS5: [https://colab.research.google.com/drive/1-D_WYKVvO-rNaSWxxmgSMwctafu7_UzA?usp=sharing](https://colab.research.google.com/drive/1-D_WYKVvO-rNaSWxxmgSMwctafu7_UzA?usp=sharing)
-
-Link to Dataset: https://www.kaggle.com/datasets/ulrikthygepedersen/speed-dating/data \
-The csv to the out dataset is also on the repository. 
-
-
 # First, the FUN PART: Our matchmaking website!
 
 ## Video Demo:
@@ -42,6 +32,15 @@ follow the steps below to run the website and see who you match with on your own
 
 # Second, our final write-up! 
 
+**Link to our Jupyter notebooks (also linked throughout write up):** 
+* MS2: [https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing](https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing)
+* MS3: [https://colab.research.google.com/drive/1z7sOpXUmxRID6vVpQlkCrXNFihgwi_LU?usp=sharing](https://colab.research.google.com/drive/1z7sOpXUmxRID6vVpQlkCrXNFihgwi_LU?usp=sharing) 
+* MS4: [https://colab.research.google.com/drive/1mJI34SCPfBrJ7Xdx65e0Myvi7k0Eox3U?usp=sharing](https://colab.research.google.com/drive/1mJI34SCPfBrJ7Xdx65e0Myvi7k0Eox3U?usp=sharing)
+* MS5: [https://colab.research.google.com/drive/1-D_WYKVvO-rNaSWxxmgSMwctafu7_UzA?usp=sharing](https://colab.research.google.com/drive/1-D_WYKVvO-rNaSWxxmgSMwctafu7_UzA?usp=sharing)
+
+**Link to Dataset:** https://www.kaggle.com/datasets/ulrikthygepedersen/speed-dating/data \
+The csv to the out dataset is also on the repository. 
+
 # Introduction
 
 Finding a match in the 21st century can be a challenge, especially when, little to your knowledge, the person you are destined to be with may very well be in your CSE 151A lecture hall. In this project, we aim to use a comprehensive speed dating dataset analyzing demographics, dating habits, self-perception across key features, and more, between matched and unmatched pairs, to predict whether two people of certain attributes will match. The dataset is tabular and comprises thousands of observations of people’s own traits and interests. The last field is whether or not they ended up being a match, which is our target attribute. We wanted to use some of the data in here as metrics to generate a predictive model that, when given similar data about 2 different people, can predict whether or not they will be a match.
@@ -62,7 +61,7 @@ Link to Data Exploration Notebook:
 
 [https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing](https://colab.research.google.com/drive/17Tuyk_vncUdV1RXNU-dlD5jrgjd07v-H?usp=sharing)
 
-To explore the data, we first converted our csv file to a dataframe, and skimmed through all the data that is available. We checked for missing data, the different types of each feature, the shape of the data frame etc. 
+To explore the data, we first converted our csv file to a dataframe, and skimmed through all the data that is available. We checked for missing data, the different types of each feature, the shape of the data frame, etc. 
 
 Some relevant code snippets in exploring the data are listed below~
 
@@ -82,9 +81,10 @@ self_perception = pd.DataFrame([df.attractive, df.sincere, df.intelligence, df.f
 sns.pairplot(self_perception)
 ```
 
+
 ## Preprocessing
 
-It was decided that the relevant data is the difference between preferences of two people. This means that we need to drop all irrelevant columns. After dropping, the range values were represented as string values, so these values need to be encoded to represent actual integer values by taking the average value of each range and replacing and reassigning the outputted integer value to the corresponding range. 
+It was decided that the relevant data is the difference between preferences of two people, so we dropped all irrelevant columns. After dropping, the range values were represented as string values, so these values were encoded to represent actual integer values by taking the average value of each range and replacing and reassigning the outputted integer value to the corresponding range. 
 
 Below is a code snippet showcasing the dropping of non-difference columns:
 ```
@@ -118,6 +118,22 @@ Link to Model 1 Notebook:
 
 Our first model is a simple neural net. After messing around with hyperparameter tuning, we settled on a neural net with 5 dense layers, with the first 4 having 12 nodes and the last layer having 2. We used the sigmoid activation function on each layer, and optimized the model with stochastic gradient descent with a learning rate of 0.1. The loss function used was categorical cross entropy.
 
+Below is a snippet of the code we used to build the model, showcasing the layer structure:
+```
+def buildmodel():
+  model = Sequential([
+        Dense(12, activation = 'sigmoid', input_dim = X.shape[1]),
+        Dense(12, activation = 'sigmoid'),
+        Dense(12, activation = 'sigmoid'),
+        Dense(12, activation = 'sigmoid'),
+        Dense(2, activation = 'sigmoid')
+    ])
+
+  learning_rate = 0.3
+  model.compile(optimizer=SGD(learning_rate=learning_rate), loss='categorical_crossentropy', metrics=['mse', 'accuracy'])
+  return(model)
+```
+
 
 ## Model 2
 
@@ -125,11 +141,33 @@ Link to Model 2 Notebook:
 
 [https://colab.research.google.com/drive/1Wfwq86W_myw6D7NHexcekC2eitLdB0yb?usp=sharing](https://colab.research.google.com/drive/1Wfwq86W_myw6D7NHexcekC2eitLdB0yb?usp=sharing)
 
-Our second model is a Decision Tree. Our tree used entropy as the criterion for splits and had a maximum depth of 5. Here is what our final tree looks like:
+Our second model is a Decision Tree. We used grid search to identify the optimal parameters. We also use Cost-complexity pruning to try and increase accuracy. Ultimately, our tree used entropy as the criterion for splits and had a maximum depth of 5. Here is what our final tree looks like:
 
 
 ![alt_text](figures/decision_tree_diagram.png)
 
+Below is a code snippet dislaying  how we built our decision tree classifier:
+```
+clf_entropy = DecisionTreeClassifier(criterion='entropy', max_depth=5, min_samples_leaf=2, min_samples_split=2, ccp_alpha=0.01)
+clf_entropy.fit(X_train, y_train)
+y_pred_entropy = clf_entropy.predict(X_test)
+```
+
+And here is a code snippet showcasing our pruning, as well as finding the optimal ccp_alpha value:
+```
+# Cost-complexity pruning
+path = clf_entropy.cost_complexity_pruning_path(X_train, y_train)
+ccp_alphas, impurities = path.ccp_alphas, path.impurities
+
+# Find the optimal value for ccp_alpha
+optimal_ccp_alpha = ccp_alphas[np.argmin(impurities)]
+
+# Set the ccp_alpha parameter
+clf_entropy.ccp_alpha = optimal_ccp_alpha
+
+# Re-fit the tree
+clf_entropy.fit(X_train, y_train)
+```
 
 
 ## Model 3
@@ -213,7 +251,7 @@ The data explorattion served as a vital part of our machine learning pipeline as
 
 ## Preprocessing 
 
-We used the same preprocessing methodology throughout the 3 models, and as it worked out quite well from the very beginning. We cleaned our data of 8378 observations with 123 features to 56 features, and we encoded the data as the original data was composed of strings of numerical ranges. We ended up averaging the ranges which would be the encoding for that feature, for example ‘[3-5]’ would turn into 4. This made the values a lot easier to work with for our model. There were a lot of potentially useful features that we did not use, considering we dropped more than half of the features of the original dataset. However, we believe that the data we chose to use was the most relevant to what we wanted to prove. 
+We used the same preprocessing methodology throughout the 3 models, and as it worked out quite well from the very beginning. We cleaned our data of 8378 observations with 123 features to 56 features, and we encoded the data as the original data was composed of strings of numerical ranges. We ended up averaging the ranges which would be the encoding for that feature, for example ‘[3-5]’ would turn into 4. This made the values a lot easier to work with for our model. There were a lot of potentially useful features that we did not use, considering we dropped more than half of the features of the original dataset. Another important factor to note is that in our preprocessing, knowing what we know now, it would have been beneficial to oversample our data considering there are many more not-matches compared to matches in our data. This would have been useful in increasing the accuracy of our model. Nonetheless, we believe that the data we chose to use was the most relevant to what we wanted to prove. 
 
 
 ## Model 1 
@@ -230,7 +268,7 @@ Our neural net seems to fit well--perhaps even somewhat of a best-fit! The train
 
 On the fitting graph, our model falls near the line of best fit since the test MSE and train MSE both decrease over time and somewhat converge, but the test MSE is still higher than that of the train.
 
-As seen in our classification report, our model is relatively good at predicting non-matches in both precision and recall, but does not do as well in predicting matches. match-predicting issue. This makes sense, given that in the dataset (and in real life), we are much more likely to meet non-matches than matches, leading to an imbalanced dataset. If we end up reworking our models, we can consider resampling to counteract this issue.
+As seen in our classification report, our model is relatively good at predicting non-matches in both precision and recall, but does not do as well in predicting matches. match-predicting issue. This makes sense, given that in the dataset (and in real life), we are much more likely to meet non-matches than matches, stemming from an imbalanced dataset. If we end up reworking our models, we can consider resampling and oversampling to counteract this issue. Additionally, it may be of use to rerun our hyperparameter tuning after oversampling the data to have a better understanding of the number of layers and which activation functions and learning rate would be ideal given this updated dataset. 
 
 
 ## Model 2
@@ -248,7 +286,6 @@ After plotting the learning curve, you can see the train score and test score co
 As seen by the accuracies above, our model was a good fit for the data as our training and test accuracies were very similar. Furthermore upon inspection of the tree diagram, we saw that there were 31 leaf nodes and 5 layers which we believed to be a good amount in relation to the number of observations. We also saw that each leaf node had at a minimum 9 observations which is not low enough to suggest overfitting. Grid search assisted in ensuring that our model would be a good fit for our data as it searched for the best hyperparameters and did 5 fold cross validation. In the last milestone we were able to achieve 0.87 accuracy on the training set and 0.86 accuracy on the test set by training a neural network. Although the decision tree did worse than the neural network, we are happy to find that it came within 2-3% accuracy of the neural network.
 
 Initially we tuned the hyper parameters by hand for the decision tree but then we implemented grid search which was able to automatically find the best parameters. The best parameters for our speed dating dataset turned out to be:
-
 
     criterion: entropy
     max_depth: 5
@@ -300,16 +337,16 @@ It is also important to note that the data used is from two decades ago, and the
 
 # Collaboration 
 
-Kenna: Worked on the code for the data exploration notebook and wrote the preprocessing readme file. Debugged the last model and wrote the evaluation for it. Wrote the final write up (restructured readme from previous submissions, wrote the discussion and evaluation for model 3, wrote the conclusion). 
+**Kenna**: Worked on the code for the data exploration notebook and wrote the preprocessing readme file. Debugged the last model and wrote the evaluation for it. Wrote the final write up (restructured readme from previous submissions, wrote the discussion and evaluation for model 3, wrote the conclusion). 
 
-Alon: Worked on the code and documentation for milestone 4 as well as the questions for milestone 4. 
+**Sonia**: Worked on code and documentation for milestone 3 notebook and answered the readme questions for milestone 3. Additionally, I created the website that uses a modified version of our milestone 3 model to predict matches. Also created a video demo of the website and added it to the repo along with instructions to run. Also contributed to writing responses in the final write up and gave feedback on the writeup. :-)
 
-Shruti: Worked on the code/documentation for the milestone 4 notebook and wrote the answers/writeup for the questions for milestone 4 into the readme. 
+**Alon**: Worked on the code and documentation for milestone 4 as well as the questions for milestone 4. 
 
-Sonia: Worked on code and documentation for milestone 3 notebook and answered the readme questions for milestone 3. Additionally, I created the website that uses a modified version of our milestone 3 model to predict matches. Also created a video demo of the website and added it to the repo along with instructions to run. Also contributed to writing responses in the final write up and gave feedback on the writeup. :-)
+**Shruti**: Worked on the code/documentation for the milestone 4 notebook and wrote the answers/writeup for the questions for milestone 4 into the readme. 
 
-Kaleigh: Worked on code and documentation for milestone 3 notebook and wrote answers for questions in the readme as well as documentation in the notebook itself. Collaborated in assessing which model to choose for the task. 
+**Kaleigh**: Worked on code and documentation for milestone 3 notebook and wrote answers for questions in the readme as well as documentation in the notebook itself. Collaborated in assessing which model to choose for the task. 
 
-Joshua: Worked on datapreprocessing, code for exploration notebook, and developing the first model. Contributed towards the readme file of the first milestone as well.
+**Joshua**: Worked on datapreprocessing, code for exploration notebook, and developing the first model. Contributed towards the readme file of the first milestone as well.
 
-Oscar: worked on code and documentation for milestone 5 notebook, developing 3rd model, and worked on initial README in milestone 1. 
+**Oscar**: worked on code and documentation for milestone 5 notebook, developing 3rd model, and worked on initial README in milestone 1. 
